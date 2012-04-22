@@ -1,0 +1,68 @@
+name: SuperEvent
+main: com.ptibiscuit.superevent.Plugin
+version: 0.2
+depend: [PluginsBaker]
+website:
+authors:
+- Ptibiscuit
+commands:
+ secreate:
+  description: Utile pour creer un event.
+  usage: /secreate <Tag>
+ seaddgroup:
+   description: Ajoute un team a un event 
+   usage: /seaddgroup <Event's tag> <Team's tag>
+ selist:
+   description: Liste les Events disponibles.
+   usage: /selist
+ sesetspawn:
+   description: Fixe le spawn d'une team sur sa position.
+   usage: /sesetspawn <Event's tag> <Team's tag>
+ sejoin:
+   description: Entre dans une equipe
+   usage: /sejoin <Event's tag> [Team's tag]
+ sestart:
+   description: Commence le jeu.
+   usage: /sestart <Event's tag>
+ sestop:
+   description: Arrete le jeu.
+   usage: /sestop <Event's tag>
+ sedel:
+   description: Supprime un event et tous son contenu.
+   usage: /sedel <Event's tag>
+ sedelgroup:
+   description: Supprime un groupe d'un event.
+   usage: /sedelgroup <Event's tag> <team's tag>
+ secleargroup:
+   description: Supprime tous les groups d'un event.
+   usage: /secleargroup <Event's tag>
+ sesaygroup:
+   description: Envoie un message aux groupes d'un event.
+   usage: /sesaygroup <Event's tag> <team's tag>
+ sesay:
+   description: Envoie un message a tous les membres d'un event.
+   usage: /sesaygroup <Event's tag>
+ seheal:
+   description: Heal tous les joueurs de l'event
+   usage: /seheal<Event's tag>
+ sehealgroup:
+   description: Heal un seul groupe.
+   usage: /sehealgroup <Event's tag> <team's tag>
+ segive:
+   description: Donne un joueur à tous les membres d'un event.
+   usage: /segive <Event's tag> <Id[:value]> <Quantity>
+ sequit:
+   description: Quitte l'event en cours.
+   usage: /sequit
+ segivegroup:
+   description: Donne un objet à tous les joueurs d'un groupe.
+   usage: /segivegroup <Event's tag> <team's tag> <Id[:value]> <quantity> 
+ secommand:
+   description: Force un joueur a faire une commande.
+   usage: /secommand <Event's tag> <command ...>
+ secommandgroup:
+   description: Performe une commande de chaque joueur d'un groupe.
+   usage: /secommandgroup <Event's tag> <team's tag> <command ...>
+ sekick:
+   description: Kick un joueur de l'event
+   usage: /sekick <Player's name>
